@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=stylesheet href="index.css">
+        <script src=index.js></script>
+    </head>
+
+    <body>
+        <h1>&nbsp;Hi!</h1>
+        <form name=myform onsubmit="event.preventDefault(); clickbutton();">
+            My name is &nbsp;
+            <input type="text" class = "effect" name="Name" placeholder="Your fullname..." onfocus = "focusmethod()">
+            <br><br>
+
+            I am from &nbsp;
+            <input type="text" class = effect name="College" placeholder="Your College's name." onfocus = "focusmethod()">
+            <br><br>
+
+            Gender &nbsp;
+            <select name=gender onfocus="focusmethod()">
+                <option selected></option>
+                <option value=Male>Male</option>
+                <option value=Female>Female</option>
+                <option value=Other>Other</option>
+            </select>
+            <br><br>
+
+            Date of Birth &nbsp;
+            <input type=date class = "effect" name=date style="font-size:15px" onfocus = "focusmethod()">
+            <br><br>
+
+            You can reach me at &nbsp;
+            <input type=text class = "effect" name=email placeholder="Your E-mail address" onfocus = "focusmethod()">
+            <br><br>
+
+            Set my password as &nbsp;
+            <input type=Password class = "effect" name=Pwd placeholder="Atleast 7 characters">
+            <br><br>
+
+            <input type="submit" style= "font-family:'Bubblegum Sans';font-size: 28px; border-bottom:2px solid" value=Done id=button1></input>
+        </form>
+    </body>
+</html>
